@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-08-24T03:08:40.989791+00:00",
+  "cycle": "20260824T030840Z",
+  "metrics": {
+    "network.tps": {
+      "key": "network.tps",
+      "value": 3506.4166666666665,
+      "unit": null,
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-08-24T03:08:41.002896+00:00",
+      "label": "TPS (latest)",
+      "category": "Network",
+      "definition": "numTransactions / samplePeriodSecs of the most recent getRecentPerformanceSamples entry."
+    },
+    "network.tps_avg_5": {
+      "key": "network.tps_avg_5",
+      "value": 3501.5266666666666,
+      "unit": null,
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-08-24T03:08:41.002896+00:00",
+      "label": "TPS (5-sample avg)",
+      "category": "Network",
+      "definition": "Sum of numTransactions over sum of samplePeriodSecs across the last 5 performance samples."
+    },
+    "network.avg_slot_time_ms": {
+      "key": "network.avg_slot_time_ms",
+      "value": 365.8536585365854,
+      "unit": "ms",
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-08-24T03:08:41.002896+00:00",
+      "label": "Avg slot time",
+      "category": "Network",
+      "definition": "samplePeriodSecs / numSlots * 1000 from the most recent performance sample."
+    },
+    "network.epoch": {
+      "key": "network.epoch",
+      "value": 1021,
+      "unit": null,
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-08-24T03:08:41.002896+00:00",
+      "label": "Epoch",
+      "category": "Network",
+      "definition": "Current epoch number from getEpochInfo."
+    },
+    "network.current_slot": {
+      "key": "network.current_slot",
+      "value": 441302141,
+      "unit": null,
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-08-24T03:08:41.002896+00:00",
+      "label": "Current slot",
+      "category": "Network",
+      "definition": "Latest confirmed slot from getSlot (RPC)."
+    },
+    "network.epoch_progress_pct": {
+      "key": "network.epoch_progress_pct",
+      "value": 53.27337962962962,
+      "unit": "%",
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-08-24T03:08:41.002896+00:00",
+      "label": "Epoch progress",
+      "category": "Network",
+      "definition": "slotIndex / slotsInEpoch * 100 from getEpochInfo."
+    },
+    "validators.active_count": {
+      "key": "validators.active_count",
+      "value": 685,
+      "unit": null,
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-08-24T03:08:41.002896+00:00",
+      "label": "Active validators",
+      "category": "Validators",
+      "definition": "Count of active vote accounts from getVoteAccounts."
+    },
+    "validators.delinquent_count": {
+      "key": "validators.delinquent_count",
+      "value": 10,
+      "unit": null,
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-08-24T03:08:41.002896+00:00",
+      "label": "Delinquent validators",
+      "category": "Validators",
+      "definition": "Count of delinquent vote accounts from getVoteAccounts."
+    },
+    "validators.total_stake_sol": {
+      "key": "validators.total_stake_sol",
+      "value": 433436312.73282266,
+      "unit": "SOL",
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-08-24T03:08:41.002896+00:00",
+      "label": "Total stake",
+      "category": "Validators",
+      "definition": "Sum of stake (active + delinquent) in SOL from getVoteAccounts."
+    },
+    "validators.delinquent_stake_pct": {
+      "key": "validators.delinquent_stake_pct",
+      "value": 0.03592147811644269,
+      "unit": "%",
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-08-24T03:08:41.002896+00:00",
+      "label": "Delinquent stake",
+      "category": "Validators",
+      "definition": "Delinquent stake / total stake * 100."
+    },
+    "market.sol_price_usd": {
+      "key": "market.sol_price_usd",
+      "value": 94.17,
+      "unit": "USD",
+      "source": "coingecko",
+      "collected_at": "2026-08-24T03:08:47.868629+00:00",
+      "label": "SOL price",
+      "category": "Market",
+      "definition": "USD spot price from CoinGecko simple/price."
+    }
+  }
+}

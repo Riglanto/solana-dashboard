@@ -1,0 +1,72 @@
+name: nightly-update
+
+# The heart of the "auto-updating" story: every night the pipeline runs in
+# CI, regenerates artifacts, and commits them. The repo's commit history IS
+# the proof that the report updates itself.
+on:
+  schedule:
+    - cron: "23 3 * * *"  # 03:23 UTC nightly (off the :00/:30 mark)
+  workflow_dispatch: {}   # manual trigger for demos / write-up screenshots
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Install dependencies
+        run: uv sync --frozen
+      - name: Run tests
+        run: uv run pytest -q
+
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Install dependencies
+        run: uv sync --frozen
+
+      - name: Collect metrics (nightly cycle)
+        # The required-metric gate exits non-zero when a source is down —
+        # but the cycle still wrote artifacts. Commit them anyway: a flaky
+        # third-party API must not leave the dashboard stale. The failure
+        # stays visible in the action log.
+        continue-on-error: true
+        run: uv run python -m solana_dashboard collect --data-dir data
+
+      - name: Render artifacts (dashboard / report / json)
+        run: uv run python -m solana_dashboard render --data-dir data
+
+      - name: Upload reports as Pages artifact
+        # Uploaded from this job's workspace, so Pages always gets the
+        # render from THIS run — a separate checkout would see the commit
+        # that triggered the run, missing the bot's fresh-data commit.
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: reports
+
+      - name: Commit regenerated artifacts
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: nightly data update"
+          commit_user_name: "solana-dashboard-bot"
+          commit_user_email: "bot@users.noreply.github.com"
+
+  pages:
+    needs: update
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

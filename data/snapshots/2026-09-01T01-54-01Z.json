@@ -1,0 +1,165 @@
+{
+  "collected_at": "2026-09-01T01:54:01.542525+00:00",
+  "cycle": "20260901T015401Z",
+  "metrics": {
+    "network.tps": {
+      "key": "network.tps",
+      "value": 3968.2833333333333,
+      "unit": null,
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-09-01T01:54:01.550541+00:00",
+      "label": "TPS (latest)",
+      "category": "Network",
+      "definition": "numTransactions / samplePeriodSecs of the most recent getRecentPerformanceSamples entry."
+    },
+    "network.tps_avg_5": {
+      "key": "network.tps_avg_5",
+      "value": 3940.56,
+      "unit": null,
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-09-01T01:54:01.550541+00:00",
+      "label": "TPS (5-sample avg)",
+      "category": "Network",
+      "definition": "Sum of numTransactions over sum of samplePeriodSecs across the last 5 performance samples."
+    },
+    "network.avg_slot_time_ms": {
+      "key": "network.avg_slot_time_ms",
+      "value": 320.85561497326205,
+      "unit": "ms",
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-09-01T01:54:01.550541+00:00",
+      "label": "Avg slot time",
+      "category": "Network",
+      "definition": "samplePeriodSecs / numSlots * 1000 from the most recent performance sample."
+    },
+    "network.epoch": {
+      "key": "network.epoch",
+      "value": 1026,
+      "unit": null,
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-09-01T01:54:01.550541+00:00",
+      "label": "Epoch",
+      "category": "Network",
+      "definition": "Current epoch number from getEpochInfo."
+    },
+    "network.current_slot": {
+      "key": "network.current_slot",
+      "value": 443303607,
+      "unit": null,
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-09-01T01:54:01.550541+00:00",
+      "label": "Current slot",
+      "category": "Network",
+      "definition": "Latest confirmed slot from getSlot (RPC)."
+    },
+    "network.epoch_progress_pct": {
+      "key": "network.epoch_progress_pct",
+      "value": 16.575694444444444,
+      "unit": "%",
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-09-01T01:54:01.550541+00:00",
+      "label": "Epoch progress",
+      "category": "Network",
+      "definition": "slotIndex / slotsInEpoch * 100 from getEpochInfo."
+    },
+    "validators.active_count": {
+      "key": "validators.active_count",
+      "value": 681,
+      "unit": null,
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-09-01T01:54:01.550541+00:00",
+      "label": "Active validators",
+      "category": "Validators",
+      "definition": "Count of active vote accounts from getVoteAccounts."
+    },
+    "validators.delinquent_count": {
+      "key": "validators.delinquent_count",
+      "value": 13,
+      "unit": null,
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-09-01T01:54:01.550541+00:00",
+      "label": "Delinquent validators",
+      "category": "Validators",
+      "definition": "Count of delinquent vote accounts from getVoteAccounts."
+    },
+    "validators.total_stake_sol": {
+      "key": "validators.total_stake_sol",
+      "value": 438201819.3646002,
+      "unit": "SOL",
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-09-01T01:54:01.550541+00:00",
+      "label": "Total stake",
+      "category": "Validators",
+      "definition": "Sum of stake (active + delinquent) in SOL from getVoteAccounts."
+    },
+    "validators.delinquent_stake_pct": {
+      "key": "validators.delinquent_stake_pct",
+      "value": 0.0053594961079783355,
+      "unit": "%",
+      "source": "solana-rpc(https://api.mainnet-beta.solana.com)",
+      "collected_at": "2026-09-01T01:54:01.550541+00:00",
+      "label": "Delinquent stake",
+      "category": "Validators",
+      "definition": "Delinquent stake / total stake * 100."
+    },
+    "defi.solana_tvl_usd": {
+      "key": "defi.solana_tvl_usd",
+      "value": 5962784320.237451,
+      "unit": "USD",
+      "source": "defillama",
+      "collected_at": "2026-09-01T01:54:02.894977+00:00",
+      "label": "Solana TVL",
+      "category": "DeFi",
+      "definition": "Total value locked on Solana from DefiLlama /v2/chains."
+    },
+    "defi.dex_volume_24h_usd": {
+      "key": "defi.dex_volume_24h_usd",
+      "value": 3179525867.49,
+      "unit": "USD",
+      "source": "defillama",
+      "collected_at": "2026-09-01T01:54:02.894977+00:00",
+      "label": "DEX volume (24h)",
+      "category": "DeFi",
+      "definition": "Sum of totalVolume24h across Solana DEXes from DefiLlama /overview/dexs."
+    },
+    "defi.stablecoin_supply_usd": {
+      "key": "defi.stablecoin_supply_usd",
+      "value": 16083648632.534973,
+      "unit": "USD",
+      "source": "defillama",
+      "collected_at": "2026-09-01T01:54:02.894977+00:00",
+      "label": "Stablecoin supply",
+      "category": "DeFi",
+      "definition": "Sum of peggedUSD balances on Solana from DefiLlama stablecoins."
+    },
+    "market.sol_price_usd": {
+      "key": "market.sol_price_usd",
+      "value": 103.33,
+      "unit": "USD",
+      "source": "coingecko",
+      "collected_at": "2026-09-01T01:54:04.004523+00:00",
+      "label": "SOL price",
+      "category": "Market",
+      "definition": "USD spot price from CoinGecko simple/price."
+    },
+    "upgrade.alpenglow_stars": {
+      "key": "upgrade.alpenglow_stars",
+      "value": 145.0,
+      "unit": null,
+      "source": "github.com/anza-xyz/alpenglow",
+      "collected_at": "2026-09-01T01:54:04.222464+00:00",
+      "label": "Alpenglow repo stars",
+      "category": "Upgrades",
+      "definition": "Stargazer count of github.com/anza-xyz/alpenglow \u2014 a proxy for interest in the Alpenglow consensus initiative."
+    }
+  },
+  "state": {
+    "upgrade.simd_0525": "SIMD-0525 Reduce Slot Times",
+    "upgrade.simd_0525_status": "Draft",
+    "upgrade.simd_0525_created": "2026-05-01",
+    "upgrade.simd_0525_source": "github.com/solana-foundation/solana-improvement-documents",
+    "upgrade.alpenglow": "Active development (open source)",
+    "upgrade.alpenglow_last_push": "2026-08-10",
+    "upgrade.alpenglow_source": "github.com/anza-xyz/alpenglow"
+  }
+}
