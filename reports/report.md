@@ -1,64 +1,64 @@
 # Solana Ecosystem Report
 
-_Generated 2026-09-17 08:46:03 UTC · [dashboard](dashboard.html) · [machine-readable JSON](latest.json)_
+_Generated 2026-09-18 08:21:41 UTC · [dashboard](dashboard.html) · [machine-readable JSON](latest.json)_
 
 ## Executive summary
 
-As of the latest cycle, the network was in **epoch 1,036** (46.54% through); processing ~**3,595.1 tx/s**; at **314 ms** average slot time; SOL traded at **$100.06**; DeFi: TVL **$5.83B**, 24h DEX volume **$4.09B**, stablecoin supply **$15.69B**; validators: **675 active**, 16 delinquent (0.09% of stake).
+As of the latest cycle, the network was in **epoch 1,037** (10.17% through); processing ~**5,135.1 tx/s**; at **262 ms** average slot time; SOL traded at **$105.77**; DeFi: TVL **$6.01B**, 24h DEX volume **$3.66B**, stablecoin supply **$15.50B**; validators: **677 active**, 11 delinquent (0.04% of stake).
 
 ## What changed
 
-### Metrics — since 2026-09-16 08:42:26 UTC
+### Metrics — since 2026-09-17 08:46:03 UTC
 
 | Metric | Before | After | Δ |
 | --- | --- | --- | --- |
-| TPS (latest) | 3,382.6 | 3,595.1 | +6.3% |
-| TPS (5-sample avg) | 3,458.2 | 3,518.6 | +1.7% |
-| Avg slot time | 324 ms | 314 ms | -3.1% |
-| Epoch | 1,035 | 1,036 | +1 |
-| Current slot | 447,479,710 | 447,753,043 | +273,333 |
-| Epoch progress | 83.27% | 46.54% | -36.73 pp |
-| Active validators | 678 | 675 | -3 |
-| Delinquent validators | 11 | 16 | +5 |
-| Delinquent stake | 0.04% | 0.09% | +0.05 pp |
-| Solana TVL | $5.72B | $5.83B | +1.9% |
-| DEX volume (24h) | $3.80B | $4.09B | +7.4% |
-| SOL price | $96.62 | $100.06 | +3.6% |
-| Alpenglow repo stars | 146 | 145 | -1 |
+| TPS (latest) | 3,595.1 | 5,135.1 | +42.8% |
+| TPS (5-sample avg) | 3,518.6 | 4,384.4 | +24.6% |
+| Avg slot time | 314 ms | 262 ms | -16.6% |
+| Epoch | 1,036 | 1,037 | +1 |
+| Current slot | 447,753,043 | 448,027,952 | +274,909 |
+| Epoch progress | 46.54% | 10.17% | -36.36 pp |
+| Active validators | 675 | 677 | +2 |
+| Delinquent validators | 16 | 11 | -5 |
+| Delinquent stake | 0.09% | 0.04% | -0.05 pp |
+| Solana TVL | $5.83B | $6.01B | +3.1% |
+| DEX volume (24h) | $4.09B | $3.66B | -10.4% |
+| Stablecoin supply | $15.69B | $15.50B | -1.2% |
+| SOL price | $100.06 | $105.77 | +5.7% |
 
 ## Network
 
 | Metric | Value | Unit | Source |
 | --- | --- | --- | --- |
-| **Current slot** | 447,753,043 | — | solana-rpc |
-| **Epoch** | 1,036 | — | solana-rpc |
-| **Epoch progress** | 46.54% | % | solana-rpc |
-| **TPS (latest)** | 3,595.1 | — | solana-rpc |
-| **TPS (5-sample avg)** | 3,518.6 | — | solana-rpc |
-| **Avg slot time** | 314 ms | ms | solana-rpc |
+| **Current slot** | 448,027,952 | — | solana-rpc |
+| **Epoch** | 1,037 | — | solana-rpc |
+| **Epoch progress** | 10.17% | % | solana-rpc |
+| **TPS (latest)** | 5,135.1 | — | solana-rpc |
+| **TPS (5-sample avg)** | 4,384.4 | — | solana-rpc |
+| **Avg slot time** | 262 ms | ms | solana-rpc |
 
 ## Validators
 
 | Metric | Value | Unit | Source |
 | --- | --- | --- | --- |
-| **Active validators** | 675 | — | solana-rpc |
-| **Delinquent validators** | 16 | — | solana-rpc |
-| **Total stake** | 439.76M SOL | SOL | solana-rpc |
-| **Delinquent stake** | 0.09% | % | solana-rpc |
+| **Active validators** | 677 | — | solana-rpc |
+| **Delinquent validators** | 11 | — | solana-rpc |
+| **Total stake** | 439.61M SOL | SOL | solana-rpc |
+| **Delinquent stake** | 0.04% | % | solana-rpc |
 
 ## Market
 
 | Metric | Value | Unit | Source |
 | --- | --- | --- | --- |
-| **SOL price** | $100.06 | USD | coingecko |
+| **SOL price** | $105.77 | USD | coingecko |
 
 ## DeFi
 
 | Metric | Value | Unit | Source |
 | --- | --- | --- | --- |
-| **Solana TVL** | $5.83B | USD | defillama |
-| **DEX volume (24h)** | $4.09B | USD | defillama |
-| **Stablecoin supply** | $15.69B | USD | defillama |
+| **Solana TVL** | $6.01B | USD | defillama |
+| **DEX volume (24h)** | $3.66B | USD | defillama |
+| **Stablecoin supply** | $15.50B | USD | defillama |
 
 ## On-chain
 
