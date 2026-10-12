@@ -1,66 +1,69 @@
 # Solana Ecosystem Report
 
-_Generated 2026-10-11 10:09:13 UTC · [dashboard](dashboard.html) · [machine-readable JSON](latest.json)_
+_Generated 2026-10-12 11:04:54 UTC · [dashboard](dashboard.html) · [machine-readable JSON](latest.json)_
 
 ## Executive summary
 
-As of the latest cycle, the network was in **epoch 1,054** (65.96% through); processing ~**4,631.1 tx/s**; at **217 ms** average slot time; SOL traded at **$109.44**; DeFi: TVL **$6.19B**, 24h DEX volume **$2.07B**, stablecoin supply **$16.32B**; validators: **673 active**, 7 delinquent (0.02% of stake).
+As of the latest cycle, the network was in **epoch 1,055** (61.07% through); processing ~**4,706.6 tx/s**; at **222 ms** average slot time; SOL traded at **$111.37**; DeFi: TVL **$6.27B**, 24h DEX volume **$1.84B**, stablecoin supply **$16.21B**; validators: **672 active**, 9 delinquent (0.03% of stake).
 
 ## What changed
 
-### Metrics — since 2026-10-10 09:59:28 UTC
+### Metrics — since 2026-10-11 10:09:13 UTC
 
 | Metric | Before | After | Δ |
 | --- | --- | --- | --- |
-| TPS (latest) | 4,458.6 | 4,631.1 | +3.9% |
-| TPS (5-sample avg) | 4,268.8 | 4,530.3 | +6.1% |
-| Avg slot time | 214 ms | 217 ms | +1.4% |
-| Epoch | 1,053 | 1,054 | +1 |
-| Current slot | 455,214,489 | 455,612,963 | +398,474 |
-| Epoch progress | 73.72% | 65.96% | -7.76 pp |
-| Active validators | 675 | 673 | -2 |
-| Delinquent validators | 6 | 7 | +1 |
-| DEX volume (24h) | $2.95B | $2.07B | -29.8% |
+| TPS (latest) | 4,631.1 | 4,706.6 | +1.6% |
+| TPS (5-sample avg) | 4,530.3 | 4,886.7 | +7.9% |
+| Avg slot time | 217 ms | 222 ms | +2.2% |
+| Epoch | 1,054 | 1,055 | +1 |
+| Current slot | 455,612,963 | 456,023,809 | +410,846 |
+| Epoch progress | 65.96% | 61.07% | -4.90 pp |
+| Active validators | 673 | 672 | -1 |
+| Delinquent validators | 7 | 9 | +2 |
+| Solana TVL | $6.19B | $6.27B | +1.2% |
+| DEX volume (24h) | $2.07B | $1.84B | -11.1% |
+| SOL price | $109.44 | $111.37 | +1.8% |
+| Alpenglow repo stars | — | 147 | first measurement |
 
-### Governance — since 2026-10-10 09:59:28 UTC
+### Governance — since 2026-10-11 10:09:13 UTC
 
-- **simd 0525 status**: `Draft` → `unavailable`
+- **simd 0525 status**: `unavailable` → `Draft`
 
-- **alpenglow**: `Active development (open source)` → `status unavailable`
+- **alpenglow**: `status unavailable` → `Active development (open source)`
 
 ## Network
 
 | Metric | Value | Unit | Source |
 | --- | --- | --- | --- |
-| **Current slot** | 455,612,963 | — | solana-rpc |
-| **Epoch** | 1,054 | — | solana-rpc |
-| **Epoch progress** | 65.96% | % | solana-rpc |
-| **TPS (latest)** | 4,631.1 | — | solana-rpc |
-| **TPS (5-sample avg)** | 4,530.3 | — | solana-rpc |
-| **Avg slot time** | 217 ms | ms | solana-rpc |
+| **Current slot** | 456,023,809 | — | solana-rpc |
+| **Epoch** | 1,055 | — | solana-rpc |
+| **Epoch progress** | 61.07% | % | solana-rpc |
+| **TPS (latest)** | 4,706.6 | — | solana-rpc |
+| **TPS (5-sample avg)** | 4,886.7 | — | solana-rpc |
+| **Avg slot time** | 222 ms | ms | solana-rpc |
 
 ## Validators
 
 | Metric | Value | Unit | Source |
 | --- | --- | --- | --- |
-| **Active validators** | 673 | — | solana-rpc |
-| **Delinquent validators** | 7 | — | solana-rpc |
-| **Total stake** | 438.74M SOL | SOL | solana-rpc |
-| **Delinquent stake** | 0.02% | % | solana-rpc |
+| **Active validators** | 672 | — | solana-rpc |
+| **Delinquent validators** | 9 | — | solana-rpc |
+| **Total stake** | 438.76M SOL | SOL | solana-rpc |
+| **Delinquent stake** | 0.03% | % | solana-rpc |
 
 ## Market
 
 | Metric | Value | Unit | Source |
 | --- | --- | --- | --- |
-| **SOL price** | $109.44 | USD | coingecko |
+| **SOL price** | $111.37 | USD | coingecko |
 
 ## DeFi
 
 | Metric | Value | Unit | Source |
 | --- | --- | --- | --- |
-| **Solana TVL** | $6.19B | USD | defillama |
-| **DEX volume (24h)** | $2.07B | USD | defillama |
-| **Stablecoin supply** | $16.32B | USD | defillama |
+| **Solana TVL** | $6.27B | USD | defillama |
+| **DEX volume (24h)** | $1.84B | USD | defillama |
+| **Stablecoin supply** | $16.21B | USD | defillama |
 
 ## On-chain
 
@@ -73,14 +76,18 @@ As of the latest cycle, the network was in **epoch 1,054** (65.96% through); pro
 
 | Metric | Value | Unit | Source |
 | --- | --- | --- | --- |
-| **Alpenglow repo stars** | — | — | unavailable |
+| **Alpenglow repo stars** | 147 | — | github.com/anza-xyz/alpenglow |
 
 ## Upgrades & governance
 
 | Item | Status | Tracked from |
 | --- | --- | --- |
-| SIMD-0525 status | unavailable | state snapshot |
-| Alpenglow (consensus) | status unavailable | state snapshot |
+| SIMD-0525 | SIMD-0525 Reduce Slot Times | state snapshot |
+| SIMD-0525 status | Draft | state snapshot |
+| SIMD-0525 created | 2026-05-01 | state snapshot |
+| Alpenglow (consensus) | Active development (open source) | state snapshot |
+| Alpenglow last push | 2026-08-10 | state snapshot |
+| Alpenglow repo stars | 147 | github.com/anza-xyz/alpenglow |
 
 ## Sources & methodology
 
