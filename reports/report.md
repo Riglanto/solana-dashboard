@@ -1,37 +1,37 @@
 # Solana Ecosystem Report
 
-_Generated 2026-10-20 08:42:04 UTC · [dashboard](dashboard.html) · [machine-readable JSON](latest.json)_
+_Generated 2026-10-21 08:43:03 UTC · [dashboard](dashboard.html) · [machine-readable JSON](latest.json)_
 
 ## Executive summary
 
-As of the latest cycle, the network was in **epoch 1,062** (88.80% through); processing ~**4,478.8 tx/s**; at **219 ms** average slot time; SOL traded at **$104.20**; DeFi: TVL **$5.90B**, 24h DEX volume **$2.29B**, stablecoin supply **$15.90B**; validators: **668 active**, 11 delinquent (0.00% of stake).
+As of the latest cycle, the network was in **epoch 1,063** (81.13% through); processing ~**4,287.4 tx/s**; at **217 ms** average slot time; SOL traded at **$106.52**; DeFi: TVL **$5.98B**, 24h DEX volume **$3.07B**, stablecoin supply **$15.95B**; validators: **668 active**, 11 delinquent (0.00% of stake).
 
 ## What changed
 
-### Metrics — since 2026-10-19 09:05:37 UTC
+### Metrics — since 2026-10-20 08:42:04 UTC
 
 | Metric | Before | After | Δ |
 | --- | --- | --- | --- |
-| TPS (latest) | 4,983.7 | 4,478.8 | -10.1% |
-| TPS (5-sample avg) | 4,729.0 | 4,562.0 | -3.5% |
-| Avg slot time | 215 ms | 219 ms | +1.8% |
-| Epoch | 1,061 | 1,062 | +1 |
-| Current slot | 458,777,117 | 459,167,613 | +390,496 |
-| Epoch progress | 98.41% | 88.80% | -9.61 pp |
-| Delinquent validators | 12 | 11 | -1 |
-| DEX volume (24h) | $2.22B | $2.29B | +3.5% |
-| SOL price | $105.52 | $104.20 | -1.3% |
+| TPS (latest) | 4,478.8 | 4,287.4 | -4.3% |
+| TPS (5-sample avg) | 4,562.0 | 4,433.2 | -2.8% |
+| Epoch | 1,062 | 1,063 | +1 |
+| Current slot | 459,167,613 | 459,566,490 | +398,877 |
+| Epoch progress | 88.80% | 81.13% | -7.67 pp |
+| Solana TVL | $5.90B | $5.98B | +1.3% |
+| DEX volume (24h) | $2.29B | $3.07B | +34.0% |
+| SOL price | $104.20 | $106.52 | +2.2% |
+| Alpenglow repo stars | 147 | 148 | +1 |
 
 ## Network
 
 | Metric | Value | Unit | Source |
 | --- | --- | --- | --- |
-| **Current slot** | 459,167,613 | — | solana-rpc |
-| **Epoch** | 1,062 | — | solana-rpc |
-| **Epoch progress** | 88.80% | % | solana-rpc |
-| **TPS (latest)** | 4,478.8 | — | solana-rpc |
-| **TPS (5-sample avg)** | 4,562.0 | — | solana-rpc |
-| **Avg slot time** | 219 ms | ms | solana-rpc |
+| **Current slot** | 459,566,490 | — | solana-rpc |
+| **Epoch** | 1,063 | — | solana-rpc |
+| **Epoch progress** | 81.13% | % | solana-rpc |
+| **TPS (latest)** | 4,287.4 | — | solana-rpc |
+| **TPS (5-sample avg)** | 4,433.2 | — | solana-rpc |
+| **Avg slot time** | 217 ms | ms | solana-rpc |
 
 ## Validators
 
@@ -39,22 +39,22 @@ As of the latest cycle, the network was in **epoch 1,062** (88.80% through); pro
 | --- | --- | --- | --- |
 | **Active validators** | 668 | — | solana-rpc |
 | **Delinquent validators** | 11 | — | solana-rpc |
-| **Total stake** | 437.88M SOL | SOL | solana-rpc |
+| **Total stake** | 438.58M SOL | SOL | solana-rpc |
 | **Delinquent stake** | 0.00% | % | solana-rpc |
 
 ## Market
 
 | Metric | Value | Unit | Source |
 | --- | --- | --- | --- |
-| **SOL price** | $104.20 | USD | coingecko |
+| **SOL price** | $106.52 | USD | coingecko |
 
 ## DeFi
 
 | Metric | Value | Unit | Source |
 | --- | --- | --- | --- |
-| **Solana TVL** | $5.90B | USD | defillama |
-| **DEX volume (24h)** | $2.29B | USD | defillama |
-| **Stablecoin supply** | $15.90B | USD | defillama |
+| **Solana TVL** | $5.98B | USD | defillama |
+| **DEX volume (24h)** | $3.07B | USD | defillama |
+| **Stablecoin supply** | $15.95B | USD | defillama |
 
 ## On-chain
 
@@ -67,7 +67,7 @@ As of the latest cycle, the network was in **epoch 1,062** (88.80% through); pro
 
 | Metric | Value | Unit | Source |
 | --- | --- | --- | --- |
-| **Alpenglow repo stars** | 147 | — | github.com/anza-xyz/alpenglow |
+| **Alpenglow repo stars** | 148 | — | github.com/anza-xyz/alpenglow |
 
 ## Upgrades & governance
 
@@ -78,7 +78,7 @@ As of the latest cycle, the network was in **epoch 1,062** (88.80% through); pro
 | SIMD-0525 created | 2026-05-01 | state snapshot |
 | Alpenglow (consensus) | Active development (open source) | state snapshot |
 | Alpenglow last push | 2026-08-10 | state snapshot |
-| Alpenglow repo stars | 147 | github.com/anza-xyz/alpenglow |
+| Alpenglow repo stars | 148 | github.com/anza-xyz/alpenglow |
 
 ## Sources & methodology
 
